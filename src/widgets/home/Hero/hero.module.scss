@@ -1,0 +1,87 @@
+.homeHero {
+  min-height      : calc(100vh - 8rem);
+  background-color: var(--green);
+  color           : var(--white);
+
+  .cont {
+
+    .left {
+      gap  : 28px;
+      width: 60%;
+
+      .title {
+        font-size  : 32px;
+        font-weight: 700;
+        max-width  : 495px;
+      }
+
+      .info {
+        font-size  : 20px;
+        font-weight: 600;
+        max-width  : 520px;
+
+      }
+    }
+
+    .right {
+      position: relative;
+
+      .imgCont {
+        margin-top   : 20px;
+        margin-bottom: -100px;
+      }
+
+      .rotatingImg {
+        position: absolute;
+
+        right : 150px;
+        bottom: 25px;
+        width : 296px;
+        height: 338px;
+
+        animation: RotateImg 6s infinite forwards;
+      }
+    }
+  }
+}
+
+.bottomInfo {
+  padding: 16px 0;
+
+  .bottomCont {
+    gap: 44px;
+
+    .teaVal {
+      gap: 12px;
+
+      .imgCont {
+        width : 72px;
+        height: 72px;
+      }
+
+      .desc {
+        .title {
+          font-size  : 20px;
+          font-weight: 300;
+          color      : var(--second);
+        }
+
+        .number {
+          font-size  : 20px;
+          font-weight: 700;
+          color      : var(--gray);
+        }
+      }
+    }
+  }
+}
+
+@keyframes RotateImg {
+  from {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}

@@ -1,0 +1,78 @@
+// Mixin for media queries
+@mixin Media($device-width) {
+     @media screen and (max-width : $device-width) {
+          @content;
+     }
+}
+
+@mixin MediaMin($device-width) {
+     @media screen and (min-width : $device-width) {
+          @content;
+     }
+}
+
+@mixin MediaMaxMin($device-max-width, $device-min-width) {
+     @media screen and (max-width : $device-max-width) and (min-width : $device-min-width) {
+          @content;
+     }
+}
+
+@mixin TextOverflowLines($max-lines) {
+     overflow          : hidden;
+     text-overflow     : ellipsis;
+     display           : -webkit-box;
+     -webkit-line-clamp: $max-lines;
+     line-clamp        : $max-lines;
+     -webkit-box-orient: vertical;
+}
+
+// Mixin for media queries -- end
+
+// Layout utils
+.d-flex {
+     display: flex;
+}
+
+.d-flex-row {
+     display        : flex;
+     justify-content: space-between;
+     align-items    : center;
+}
+
+.d-flex-row-start {
+     display        : flex;
+     justify-content: flex-start;
+     align-items    : center;
+}
+
+.d-flex-col {
+     display       : flex;
+     flex-direction: column;
+     align-items   : flex-start;
+}
+
+
+
+.pos-rel {
+     position: relative;
+}
+
+.overf-hid {
+     overflow: hidden;
+}
+
+.coverImage {
+     min-width      : 100%;
+     max-width      : 100%;
+     min-height     : 100%;
+     max-height     : 100%;
+     object-fit     : cover;
+     object-position: center center;
+}
+
+.containedImage {
+     min-width      : 100%;
+     max-width      : 100%;
+     object-fit     : contain;
+     object-position: center center;
+}
