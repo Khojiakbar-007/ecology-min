@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from 'widgets/header';
 
 import s from './hero.module.scss';
 import { Button } from '@mui/material';
@@ -8,7 +7,6 @@ const Hero = () => {
   return (
     <>
       <section className={s.homeHero}>
-        <Header />
         <div className={`${s.cont} container-fluid d-flex-row`}>
           <div className={`${s.left} d-flex-col`}>
             <h1 className={s.title}>

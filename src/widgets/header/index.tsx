@@ -33,7 +33,7 @@ const Header = () => {
             <Link href='/'>Блог</Link>
           </li>
           <li>
-            <Link href='/'>Контакты</Link>
+            <Link href='/contacts'>Контакты</Link>
           </li>
         </ul>
 

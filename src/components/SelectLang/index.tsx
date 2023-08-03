@@ -1,6 +1,5 @@
 import { MenuItem, Select, SelectChangeEvent } from '@mui/material';
 import React, { useState } from 'react';
-import { BsChevronDown } from 'react-icons/bs';
 import ChevronDown from './chevron-down.svg';
 type ILangs = 'uz' | 'ru' | 'en';
 

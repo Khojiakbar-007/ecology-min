@@ -1,0 +1,17 @@
+.contactMap {
+  margin-top: 120px;
+  padding   : 50px 0;
+  background: rgba(108, 194, 27, 0.03);
+
+
+  .cont {
+    gap: 15px;
+
+    .map {}
+
+    .contactsCont {
+      min-width: 25%;
+      color    : var(--dark-gray)
+    }
+  }
+}

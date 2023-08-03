@@ -1,5 +1,12 @@
 .header {
-  padding: 20px 0;
+  padding         : 27px 0 32px;
+  position        : absolute;
+  top             : 0;
+  left            : 0;
+  right           : 0;
+  z-index         : 500;
+  background-color: var(--green);
+  color           : var(--white);
 
   .logo {
     gap: 1rem;
