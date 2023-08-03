@@ -29,7 +29,7 @@ const UzbMap = ({ selRegion, setSelRegion }: IUzbMapProps) => {
   const [hoverRegion, setHoverRegion] = useState('');
 
   return (
-    <div>
+    <>
       <svg
         width='806'
         height='526'
@@ -63,7 +63,7 @@ const UzbMap = ({ selRegion, setSelRegion }: IUzbMapProps) => {
           </clipPath>
         </defs>
       </svg>
-    </div>
+    </>
   );
 };
 

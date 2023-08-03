@@ -9,7 +9,9 @@ const ContactMap = () => {
   return (
     <section className={s.contactMap}>
       <div className={`${s.cont} container-fluid d-flex-row-start`}>
-        <UzbMap selRegion={selRegion} setSelRegion={setSelRegion} />
+        <figure className={s.map}>
+          <UzbMap selRegion={selRegion} setSelRegion={setSelRegion} />
+        </figure>
         <div className={`${s.contactsCont} d-flex-col`}>
           <MapContacts selRegion={selRegion} />
         </div>

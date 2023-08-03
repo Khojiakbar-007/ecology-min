@@ -14,32 +14,32 @@ const MapContacts = ({ selRegion }: IMapContactsProps) => {
       <div className={`${s.contactInfo} d-flex-col`}>
         <div className={`${s.row} d-flex-row-top`}>
           <div className={s.icon}>
-            <img src='./icons/phone-call.svg' alt='' />
+            <img src='./icons/phone-call.svg' alt='phone calling icon' />
           </div>
           <div className={`${s.contacts} d-flex-col`}>
             <div className={s.field}>
-              <div className={s.name}>Контакты</div>
-              <div className={s.value}>+(99871) 207-07-70</div>
+              <p className={s.name}>Контакты</p>
+              <p className={s.value}>+(99871) 207-07-70</p>
             </div>
             <div className={s.field}>
-              <div className={s.name}>Короткий номер</div>
-              <div className={s.value}>1157</div>
+              <p className={s.name}>Короткий номер</p>
+              <p className={s.value}>1157</p>
             </div>
             <div className={s.field}>
-              <div className={s.name}>Телефон доверия</div>
-              <div className={s.value}>(+99871) 207-07-70 (1013#)</div>
+              <p className={s.name}>Телефон доверия</p>
+              <p className={s.value}>(+99871) 207-07-70 (1013#)</p>
             </div>
           </div>
         </div>
 
         <div className={`${s.row} d-flex-row-top`}>
           <div className={s.icon}>
-            <img src='./icons/email.svg' alt='' />
+            <img src='./icons/email.svg' alt='email icon' />
           </div>
           <div className={`${s.contacts} d-flex-col`}>
             <div className={s.field}>
-              <div className={s.name}>Почта</div>
-              <div className={s.value}>info@eco.gov.uz</div>
+              <p className={s.name}>Почта</p>
+              <p className={s.value}>info@eco.gov.uz</p>
             </div>
           </div>
         </div>

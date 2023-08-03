@@ -1,10 +1,12 @@
 import React from 'react';
-import ContactMap from 'widgets/ContactMap';
+import ContactInfo from 'widgets/contacts/ContactInfo';
+import ContactMap from 'widgets/contacts/ContactMap';
 
 const Contacts = () => {
   return (
     <>
       <ContactMap />
+      <ContactInfo />
     </>
   );
 };
