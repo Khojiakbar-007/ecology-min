@@ -10,6 +10,7 @@ interface IRegionProps {
   setSelRegion: Dispatch<SetStateAction<string>>
   hoverRegion: string;
   setHoverRegion: Dispatch<SetStateAction<string>>
+  hasMouse: boolean;
 }
 
 const Region = ({
@@ -19,6 +20,7 @@ const Region = ({
   selRegion,
   hoverRegion,
   setHoverRegion,
+  hasMouse,
 }: IRegionProps) => {
   const pathRef = useRef<SVGPathElement>(null);
   // @ts-ignodre
@@ -36,7 +38,7 @@ const Region = ({
 
   const props: SVGProps<SVGPathElement> = isSelected
     ? { fill: 'var(--green)' }
-    : isHovering
+    : isHovering && hasMouse
     ? {
         fill: 'var(--green)',
         style: {

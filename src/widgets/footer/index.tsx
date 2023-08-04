@@ -2,12 +2,8 @@ import React from 'react';
 import s from './footer.module.scss';
 import Link from 'next/link';
 import { IconButton, IconButtonProps } from '@mui/material';
-import {
-  BiLogoFacebook,
-  BiLogoInstagramAlt,
-  BiLogoTelegram,
-  BiLogoYoutube,
-} from 'react-icons/bi';
+// prettier-ignore
+import { BiLogoFacebook, BiLogoInstagramAlt, BiLogoTelegram, BiLogoYoutube } from 'react-icons/bi';
 
 const Footer = () => {
   return (
@@ -74,15 +70,21 @@ const Footer = () => {
               <div className={`${s.contacts} d-flex-col`}>
                 <div className={s.field}>
                   <p className={s.name}>Контакты</p>
-                  <p className={s.value}>+(99871) 207-07-70</p>
+                  <a className={s.value} href='tel:998712070770'>
+                    +(99871) 207-07-70
+                  </a>
                 </div>
                 <div className={s.field}>
                   <p className={s.name}>Короткий номер</p>
-                  <p className={s.value}>1157</p>
+                  <a className={s.value} href='tel:1157'>
+                    1157
+                  </a>
                 </div>
                 <div className={s.field}>
                   <p className={s.name}>Телефон доверия</p>
-                  <p className={s.value}>(+99871) 207-07-70 (1013#)</p>
+                  <a className={s.value} href='tel:998712070770'>
+                    (+99871) 207-07-70 (1013#)
+                  </a>
                 </div>
               </div>
             </div>
@@ -94,7 +96,9 @@ const Footer = () => {
               <div className={`${s.contacts} d-flex-col`}>
                 <div className={s.field}>
                   <p className={s.name}>Почта</p>
-                  <p className={s.value}>info@eco.gov.uz</p>
+                  <a href='mailto:info@eco.gov.uz' className={s.value}>
+                    info@eco.gov.uz
+                  </a>
                 </div>
               </div>
             </div>

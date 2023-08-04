@@ -1,6 +1,7 @@
 import React, { useState, ForwardedRef, forwardRef } from 'react';
 import type { Dispatch, SVGProps, SetStateAction } from 'react';
 import Region from './Regions';
+import { useGlobalContext } from 'context/GlobalContext/context';
 
 // prettier-ignore
 const regions = [
@@ -27,6 +28,7 @@ interface IUzbMapProps {
 
 const UzbMap = ({ selRegion, setSelRegion }: IUzbMapProps) => {
   const [hoverRegion, setHoverRegion] = useState('');
+  const { hasMouse } = useGlobalContext();
 
   return (
     <>
@@ -45,6 +47,7 @@ const UzbMap = ({ selRegion, setSelRegion }: IUzbMapProps) => {
           {regions.map(({ name, Path }) => {
             return (
               <Region
+                hasMouse={hasMouse}
                 hoverRegion={hoverRegion}
                 setHoverRegion={setHoverRegion}
                 selRegion={selRegion}
