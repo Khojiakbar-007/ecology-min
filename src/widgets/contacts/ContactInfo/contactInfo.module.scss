@@ -1,11 +1,10 @@
 .contactInfo {
-  padding : 130px 0 250px;
   position: relative;
   color   : var(--dark-gray);
 
   .cont {
     gap    : 20px;
-    padding: 0 80px;
+    padding: 130px 80px 250px;
 
     .col {
       max-width: 284px;
@@ -30,11 +29,35 @@
         margin-bottom: 22px;
       }
     }
+
+    .imgCont {
+      position: absolute;
+      top     : 15px;
+      right   : 43px;
+    }
   }
 
-  .imgCont {
-    position: absolute;
-    top     : 15px;
-    right   : 43px;
+  .sendMessageCont {
+    padding: 0 37px;
+
+    .mCont {
+      padding      : 32px 150px 35px;
+      margin-bottom: 40px;
+
+      background-color: var(--green);
+
+      .mTitle {
+        margin-bottom: 38px;
+
+        text-align : center;
+        font-size  : 32px;
+        font-weight: 700;
+        color      : var(--white);
+      }
+
+      .form {
+        gap: 22px;
+      }
+    }
   }
 }

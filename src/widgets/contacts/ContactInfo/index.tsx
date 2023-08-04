@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './contactInfo.module.scss';
+import SendMessage from './SendMessage';
 
 const ContactInfo = () => {
   return (
@@ -33,6 +34,7 @@ const ContactInfo = () => {
           <img src='./images/contacts-globe.svg' alt='green globe svg' />
         </div>
       </div>
+      <SendMessage />
     </section>
   );
 };

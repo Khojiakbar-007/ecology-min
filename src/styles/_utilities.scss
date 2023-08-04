@@ -45,6 +45,12 @@
      align-items    : center;
 }
 
+.d-flex-row-end {
+     display        : flex;
+     justify-content: flex-end;
+     align-items    : center;
+}
+
 .d-flex-row-top {
      display        : flex;
      justify-content: space-between;

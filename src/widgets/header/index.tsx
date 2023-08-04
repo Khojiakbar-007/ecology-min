@@ -9,15 +9,17 @@ const Header = () => {
   return (
     <header className={s.header}>
       <nav className='container-fluid d-flex-row'>
-        <div className={`${s.logo} d-flex-row`}>
-          <div className={s.imgCont}>
-            <img src='./images/logo.png' alt='ecology logo' />
+        <Link href='/'>
+          <div className={`${s.logo} d-flex-row`}>
+            <div className={s.imgCont}>
+              <img src='./images/logo.png' alt='ecology logo' />
+            </div>
+            <p>
+              МИНИСТЕРСТВО ЭКОЛОГИИ, <br /> ОХРАНЫ ОКРУЖАЮЩЕЙ СРЕДЫ <br /> И
+              ИЗМЕНЕНИЯ КЛИМАТА <br /> РЕСПУБЛИКИ УЗБЕКИСТАН
+            </p>
           </div>
-          <p>
-            МИНИСТЕРСТВО ЭКОЛОГИИ, <br /> ОХРАНЫ ОКРУЖАЮЩЕЙ СРЕДЫ <br /> И
-            ИЗМЕНЕНИЯ КЛИМАТА <br /> РЕСПУБЛИКИ УЗБЕКИСТАН
-          </p>
-        </div>
+        </Link>
 
         <ul className={`${s.navLinks} d-flex-row`}>
           <li>
