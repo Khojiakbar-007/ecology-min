@@ -14,7 +14,7 @@ const MapContacts = ({ selRegion }: IMapContactsProps) => {
       <div className={`${s.contactInfo} d-flex-col`}>
         <div className={`${s.row} d-flex-row-top`}>
           <div className={s.icon}>
-            <img src='./icons/phone-call.svg' alt='phone calling icon' />
+            <img src='/icons/phone-call.svg' alt='phone calling icon' />
           </div>
           <div className={`${s.contacts} d-flex-col`}>
             <div className={s.field}>
@@ -40,7 +40,7 @@ const MapContacts = ({ selRegion }: IMapContactsProps) => {
 
         <div className={`${s.row} d-flex-row-top`}>
           <div className={s.icon}>
-            <img src='./icons/email.svg' alt='email icon' />
+            <img src='/icons/email.svg' alt='email icon' />
           </div>
           <div className={`${s.contacts} d-flex-col`}>
             <div className={s.field}>

@@ -2,13 +2,14 @@ import React from 'react';
 
 import s from './news.module.scss';
 import { Button, ButtonProps } from '@mui/material';
+import Link from 'next/link';
 
 const news = [
-  './images/news/new1.webp',
-  './images/news/new2.webp',
-  './images/news/new3.webp',
-  './images/news/new4.webp',
-  './images/news/new5.webp',
+  '/images/news/new1.webp',
+  '/images/news/new2.webp',
+  '/images/news/new3.webp',
+  '/images/news/new4.webp',
+  '/images/news/new5.webp',
 ];
 
 const News = () => {
@@ -26,7 +27,11 @@ const News = () => {
           <div className='container-fluid d-flex-row-top'>
             <div className={`${s.newsList} d-flex-col`}>
               {news.map((imgUrl, i) => (
-                <div key={imgUrl + i} className={`${s.new} d-flex-row`}>
+                <Link
+                  href={`news/${i}`}
+                  key={imgUrl + i}
+                  className={`${s.new} d-flex-row`}
+                >
                   <figure className={s.imgCont}>
                     <img className='coverImage' src={imgUrl} alt='' />
                   </figure>
@@ -42,10 +47,10 @@ const News = () => {
                       aliqua. Non blandit massa enim nec.
                     </p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
-            <div className={s.themes}>
+            <aside className={s.themes}>
               <h3 className={s.title}>Темы</h3>
               <div className={`${s.themesCont} d-flex-row`}>
                 <ThemeButton>ПРо</ThemeButton>
@@ -57,9 +62,9 @@ const News = () => {
               </div>
 
               <div className={s.decorImgCont}>
-                <img src='./images/decor-right.webp' alt='' />
+                <img src='/images/decor-right.webp' alt='' />
               </div>
-            </div>
+            </aside>
           </div>
         </div>
       </section>

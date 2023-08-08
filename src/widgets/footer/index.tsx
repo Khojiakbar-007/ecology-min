@@ -13,7 +13,7 @@ const Footer = () => {
           <Link href='/'>
             <div className={`${s.logo} d-flex-row`}>
               <div className={s.imgCont}>
-                <img src='./images/logo.png' alt='ecology logo' />
+                <img src='/images/logo.png' alt='ecology logo' />
               </div>
               <p>
                 МИНИСТЕРСТВО ЭКОЛОГИИ, <br /> ОХРАНЫ ОКРУЖАЮЩЕЙ СРЕДЫ <br /> И
@@ -40,22 +40,26 @@ const Footer = () => {
         <div className={`${s.col} d-flex-row-top`}>
           <div className={s.navCol}>
             <h3 className={`${s.linksTitle} d-flex-row-start`}>Страницы</h3>
-            {/* prettier-ignore */}
-            <ul className={`${s.footerLinks} d-flex-col`}>
-              <li><Link href='/'>Главная</Link></li>
-              <li><Link href='/about'>О нас</Link></li>
-              <li><Link href='/news'>Новости</Link></li>
-              <li><Link href='#'>Руководство</Link></li>
-              <li><Link href='/contacts'>Контакты</Link></li>
-            </ul>
+            <nav>
+              {/* prettier-ignore */}
+              <ul className={`${s.footerLinks} d-flex-col`}>
+                <li><Link href='/'>Главная</Link></li>
+                <li><Link href='/about'>О нас</Link></li>
+                <li><Link href='/news'>Новости</Link></li>
+                <li><Link href='#'>Руководство</Link></li>
+                <li><Link href='/contacts'>Контакты</Link></li>
+              </ul>
+            </nav>
           </div>
           <div className={s.navCol}>
             <h3 className={`${s.linksTitle} d-flex-row-start`}>Услуги</h3>
-            <ul className={`${s.footerLinks} d-flex-col`}>
-              <li>
-                <Link href='#'>Вывоз мусора</Link>
-              </li>
-            </ul>
+            <nav>
+              <ul className={`${s.footerLinks} d-flex-col`}>
+                <li>
+                  <Link href='#'>Вывоз мусора</Link>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
         <div className={s.col}>
@@ -63,7 +67,7 @@ const Footer = () => {
             <div className={`${s.row} d-flex-row-top`}>
               <div className={s.icon}>
                 <img
-                  src='./icons/phone-call--white.svg'
+                  src='/icons/phone-call--white.svg'
                   alt='phone calling icon'
                 />
               </div>
@@ -91,7 +95,7 @@ const Footer = () => {
 
             <div className={`${s.row} d-flex-row-top`}>
               <div className={s.icon}>
-                <img src='./icons/email--white.svg' alt='email icon' />
+                <img src='/icons/email--white.svg' alt='email icon' />
               </div>
               <div className={`${s.contacts} d-flex-col`}>
                 <div className={s.field}>

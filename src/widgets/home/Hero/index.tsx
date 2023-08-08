@@ -25,14 +25,14 @@ const Hero = () => {
             <div className={s.rotatingImg}>
               <img
                 className='coverImage'
-                src='./images/hero-image.png'
+                src='/images/hero-image.png'
                 alt='shield'
               />
             </div>
 
             <div className={s.imgCont}>
               <img
-                src='./images/hero-bg-image.png'
+                src='/images/hero-bg-image.png'
                 alt='uzb-white-flag-shield'
               />
             </div>
@@ -46,7 +46,7 @@ const Hero = () => {
             <figure className={s.imgCont}>
               <img
                 className='coverImage'
-                src='./images/hero-bottom-img1.png'
+                src='/images/hero-bottom-img1.png'
                 alt='plant'
               />
             </figure>
@@ -59,7 +59,7 @@ const Hero = () => {
             <figure className={s.imgCont}>
               <img
                 className='coverImage'
-                src='./images/hero-bottom-img2.png'
+                src='/images/hero-bottom-img2.png'
                 alt='plant'
               />
             </figure>
@@ -72,7 +72,7 @@ const Hero = () => {
             <figure className={s.imgCont}>
               <img
                 className='coverImage'
-                src='./images/hero-bottom-img1.png'
+                src='/images/hero-bottom-img1.png'
                 alt='plant'
               />
             </figure>

@@ -17,7 +17,7 @@ const ContactMap = () => {
         </div>
       </div>
       <div className={s.decorImgCont}>
-        <img src='./images/decor-left.webp' alt='' />
+        <img src='/images/decor-left.webp' alt='' />
       </div>
     </section>
   );

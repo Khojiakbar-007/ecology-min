@@ -1,0 +1,35 @@
+.new {
+  .topImgCont {
+    margin-top: 100px;
+    height    : 360px;
+  }
+
+  .article {
+    gap          : 32px;
+    margin-top   : 32px;
+    margin-bottom: 130px;
+
+    font-size  : 22px;
+    font-weight: 400;
+    line-height: 140%;
+
+    .title {
+      font-size  : 32px;
+      font-weight: 700;
+    }
+
+    .decorImgCont {
+      position  : absolute;
+      right     : 0;
+      margin-top: 180px;
+    }
+
+    section.withImg {
+      gap: 37px;
+
+      >img {
+        max-width: 50%;
+      }
+    }
+  }
+}

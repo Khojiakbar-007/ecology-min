@@ -12,7 +12,7 @@ const Header = () => {
         <Link href='/'>
           <div className={`${s.logo} d-flex-row`}>
             <div className={s.imgCont}>
-              <img src='./images/logo.png' alt='ecology logo' />
+              <img src='/images/logo.png' alt='ecology logo' />
             </div>
             <p>
               МИНИСТЕРСТВО ЭКОЛОГИИ, <br /> ОХРАНЫ ОКРУЖАЮЩЕЙ СРЕДЫ <br /> И
@@ -21,23 +21,25 @@ const Header = () => {
           </div>
         </Link>
 
-        <ul className={`${s.navLinks} d-flex-row`}>
-          <li>
-            <Link href='/'>О нас</Link>
-          </li>
-          <li>
-            <Link href='/news'>Новости и события</Link>
-          </li>
-          <li>
-            <Link href='/'>Услуги</Link>
-          </li>
-          <li>
-            <Link href='/'>Блог</Link>
-          </li>
-          <li>
-            <Link href='/contacts'>Контакты</Link>
-          </li>
-        </ul>
+        <nav>
+          <ul className={`${s.navLinks} d-flex-row`}>
+            <li>
+              <Link href='/'>О нас</Link>
+            </li>
+            <li>
+              <Link href='/news'>Новости и события</Link>
+            </li>
+            <li>
+              <Link href='/'>Услуги</Link>
+            </li>
+            <li>
+              <Link href='/'>Блог</Link>
+            </li>
+            <li>
+              <Link href='/contacts'>Контакты</Link>
+            </li>
+          </ul>
+        </nav>
 
         <div className={s.selectLang}>
           <SelectLang />

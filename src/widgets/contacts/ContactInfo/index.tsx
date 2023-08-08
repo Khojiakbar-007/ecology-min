@@ -31,7 +31,7 @@ const ContactInfo = () => {
         </div>
         <div className={`${s.col} ${s.colPlaceholder}`} />
         <div className={s.imgCont}>
-          <img src='./images/contacts-globe.svg' alt='green globe svg' />
+          <img src='/images/contacts-globe.svg' alt='green globe svg' />
         </div>
       </div>
       <SendMessage />
