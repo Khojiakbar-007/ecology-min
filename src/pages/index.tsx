@@ -6,8 +6,6 @@ const Home = () => {
     <>
       <Head>
         <title>Ecology - Home</title>
-        <meta name='description' content='Created by Rochwin company' />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
     </>

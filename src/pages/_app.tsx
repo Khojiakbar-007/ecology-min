@@ -25,7 +25,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <GlobalContextProvider>
           <Head>
             <title>Ecology</title>
-            <link rel='icon' href='/logo.png' />
+            <meta name='description' content='Created by Rochwin company' />
+            <link rel='icon' href='/favicon.ico' />
           </Head>
           <Header />
           <Component {...pageProps} />

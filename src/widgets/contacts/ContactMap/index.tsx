@@ -16,6 +16,9 @@ const ContactMap = () => {
           <MapContacts selRegion={selRegion} />
         </div>
       </div>
+      <div className={s.decorImgCont}>
+        <img src='./images/decor-left.webp' alt='' />
+      </div>
     </section>
   );
 };
