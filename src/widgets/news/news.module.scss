@@ -1,6 +1,7 @@
 @import 'src/styles/utilities';
 
 .news {
+
   .topTitle {
     padding: 160px 0 67px;
 
@@ -29,10 +30,18 @@
 
     .newsList {
       width: 65%;
-      gap  : 32px;
+      gap  : 5px;
 
       .new {
-        gap: 30px;
+        padding: 15px;
+        gap    : 30px;
+
+        border-radius: 2px;
+        transition   : all 0.2s ease-out;
+
+        &:hover {
+          box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.19);
+        }
 
         .imgCont {
           width      : 294px;
