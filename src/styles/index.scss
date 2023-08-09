@@ -1,6 +1,8 @@
 @import './colors&vars.scss';
 @import './utilities';
 
+@import './customStyles/newsSlider';
+
 * {
   margin : 0;
   padding: 0;
@@ -24,6 +26,7 @@ html {
 body {
   font-family     : 'Inter', sans-serif;
   background-color: var(--white);
+  color           : var(--dark-gray);
   overflow-x      : hidden;
 }
 

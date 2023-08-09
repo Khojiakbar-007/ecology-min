@@ -25,7 +25,7 @@ const Hero = () => {
             <div className={s.rotatingImg}>
               <img
                 className='coverImage'
-                src='/images/hero-image.png'
+                src='/images/hero-img.png'
                 alt='shield'
               />
             </div>

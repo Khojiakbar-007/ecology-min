@@ -1,10 +1,13 @@
 import { ThemeProvider, createTheme } from '@mui/material';
 import GlobalContextProvider from 'context/GlobalContext';
-import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import 'styles/index.scss';
 import Footer from 'widgets/footer';
 import Header from 'widgets/header';
+
+import type { AppProps } from 'next/app';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'styles/index.scss';
 
 const theme = createTheme({
   typography: {
@@ -14,6 +17,10 @@ const theme = createTheme({
     primary: {
       main: '#3366FF',
       dark: '#144fff',
+    },
+    success: {
+      main: '#6CC21B',
+      dark: '#58b105',
     },
   },
 });
