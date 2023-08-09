@@ -1,87 +1,9 @@
 import React from 'react';
 import s from './latestNews.module.scss';
-import { Button, IconButton, SxProps } from '@mui/material';
-import Slider, { Settings } from 'react-slick';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { Button } from '@mui/material';
+import Slider from 'react-slick';
 import { BsArrowRightShort } from 'react-icons/bs';
-
-const sharedArrowStyles: SxProps = {
-  position: 'absolute',
-  top: '50%',
-  zIndex: 50,
-  width: '52px',
-  height: '52px',
-  display: 'flex !important',
-  justifyContent: 'center',
-  alignItems: 'center',
-
-  background: 'var(--white)',
-  boxShadow: '0px 4px 21px rgba(0, 0, 0, 0.10)',
-  color: 'var(--black)',
-  transition: 'all 0.3s',
-  fontSize: '20px',
-
-  '&:hover': {
-    background: '#fbfbfb',
-  },
-};
-
-const PrevArrow = ({ className, ...rest }: any) => {
-  return (
-    <IconButton
-      {...rest}
-      sx={{
-        ...sharedArrowStyles,
-        transform: 'translate(-50%, -50%)',
-        left: '8px',
-      }}
-    >
-      <FaChevronLeft />
-    </IconButton>
-  );
-};
-const NextArrow = ({ className, ...rest }: any) => {
-  return (
-    <IconButton
-      {...rest}
-      sx={{
-        ...sharedArrowStyles,
-        transform: 'translate(50%, -50%)',
-        right: '8px',
-      }}
-    >
-      <FaChevronRight />
-    </IconButton>
-  );
-};
-
-const settings: Settings = {
-  dots: true,
-  infinite: true,
-  // arrows: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  prevArrow: <PrevArrow />,
-  nextArrow: <NextArrow />,
-
-  responsive: [
-    {
-      breakpoint: 1430,
-      settings: {
-        slidesToShow: 5,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 2,
-      },
-    },
-  ],
-};
+import { settings } from './carouselSettings';
 
 const LatestNews = () => {
   return (
@@ -89,6 +11,8 @@ const LatestNews = () => {
       <div className={`container-fluid`}>
         <p className={s.beforeTitle}>Важные события</p>
         <h2 className={s.title}>Последние новости</h2>
+
+        <div className={s.leftVertMessage}>Sanitation</div>
 
         <div className={`${s.newsCont}`}>
           <Slider {...settings}>
@@ -99,7 +23,7 @@ const LatestNews = () => {
                   <figure className={`${s.imgCont}`}>
                     <img
                       className='coverImage'
-                      src='./images/news/pres-img.webp'
+                      src='/images/news/pres-img.webp'
                       alt=''
                     />
                   </figure>
