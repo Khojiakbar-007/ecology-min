@@ -20,3 +20,31 @@
     opacity  : 0.5;
   }
 }
+
+.splide__arrow {}
+
+.splide__arrow--prev,
+.splide__arrow--next {
+  width : 52px;
+  height: 52px;
+
+  background: var(--white);
+  opacity   : 1;
+  box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.10);
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.splide__arrow--prev {
+  left: -18px;
+}
+
+.splide__arrow--next {
+  right: -18px;
+}
+
+.splide__pagination {
+  bottom: -53px;
+}
