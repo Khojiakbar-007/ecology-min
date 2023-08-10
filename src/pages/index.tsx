@@ -4,6 +4,7 @@ import Bosses from 'widgets/home/Bosses';
 import EcoAct from 'widgets/home/EcoAct';
 import Hero from 'widgets/home/Hero';
 import HomeServices from 'widgets/home/HomeServices';
+import OpenSources from 'widgets/home/OpenSources';
 import LatestNews from 'widgets/new/LatestNews';
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <EcoAct />
       <HomeServices />
       <Bosses />
+      <OpenSources />
       <SendMessage />
       <img
         style={{ display: 'block' }}

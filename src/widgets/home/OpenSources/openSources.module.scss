@@ -1,0 +1,63 @@
+.openSources {
+  padding : 93px 0 36px;
+  position: relative;
+
+  background: #EDF8FF;
+
+  .decorImg {
+    position: absolute;
+    bottom  : 0;
+    right   : 0;
+
+    height: 411px;
+    width : 479px;
+  }
+
+  .cont {
+    position: relative;
+
+    .preTitle {
+      margin-bottom: 11px;
+      display      : block;
+      margin-left  : 6px;
+
+      color      : var(--green);
+      font-size  : 22px;
+      font-weight: 500;
+    }
+
+    .title {
+      margin-bottom: 96px;
+
+      font-size  : 46px;
+      font-weight: 700;
+    }
+
+    .sourcesBox {
+      padding   : 39px 27px;
+      background: var(--white);
+
+      .boxTitle {
+        margin-bottom: 30px;
+
+        color      : var(--green);
+        font-size  : 25px;
+        font-weight: 500;
+      }
+
+      .sectionTitle {
+        color      : #2E3A59;
+        font-size  : 22px;
+        line-height: 21px;
+        font-weight: 600;
+      }
+
+      .sectionDesc {
+        color      : rgba(55, 64, 77, 0.49);
+        font-size  : 20px;
+        font-weight: 400;
+        line-height: 143.023%;
+      }
+    }
+  }
+}
