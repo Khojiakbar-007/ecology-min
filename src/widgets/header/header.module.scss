@@ -8,6 +8,10 @@
   background-color: var(--green);
   color           : var(--white);
 
+  &.headerNoBottomPadding {
+    padding-bottom: 0;
+  }
+
   .logo {
     gap: 1rem;
 

@@ -56,7 +56,7 @@ const Footer = () => {
             <nav>
               <ul className={`${s.footerLinks} d-flex-col`}>
                 <li>
-                  <Link href='#'>Вывоз мусора</Link>
+                  <Link href='/services'>Вывоз мусора</Link>
                 </li>
               </ul>
             </nav>

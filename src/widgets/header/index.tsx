@@ -5,9 +5,14 @@ import SelectLang from 'components/SelectLang';
 // prettier-ignore
 import { BiLogoFacebook, BiLogoInstagramAlt, BiLogoTelegram, BiLogoYoutube } from "react-icons/bi";
 import { IconButton } from '@mui/material';
+import { useRouter } from 'next/router';
 const Header = () => {
+  const { pathname } = useRouter();
+  const isAtHome = pathname === '/';
   return (
-    <header className={s.header}>
+    <header
+      className={`${s.header} ${isAtHome ? s.headerNoBottomPadding : ''}`}
+    >
       <nav className='container-fluid d-flex-row'>
         <Link href='/'>
           <div className={`${s.logo} d-flex-row`}>
@@ -30,7 +35,7 @@ const Header = () => {
               <Link href='/news'>Новости и события</Link>
             </li>
             <li>
-              <Link href='/'>Услуги</Link>
+              <Link href='/services'>Услуги</Link>
             </li>
             <li>
               <Link href='/'>Блог</Link>

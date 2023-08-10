@@ -19,7 +19,7 @@ const LatestNews = () => {
             {Array(5)
               .fill(1)
               .map((_, i) => (
-                <div className={`${s.new}`}>
+                <div key={i} className={`${s.new}`}>
                   <figure className={`${s.imgCont}`}>
                     <img
                       className='coverImage'

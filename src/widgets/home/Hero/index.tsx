@@ -3,6 +3,8 @@ import React from 'react';
 import s from './hero.module.scss';
 import { Button } from '@mui/material';
 
+const circles = [1, 2, 3, 4, 5, 6, 7, 8];
+
 const Hero = () => {
   return (
     <>
@@ -35,16 +37,33 @@ const Hero = () => {
             <div className={s.rotatingImg}>
               <img
                 className='coverImage'
-                src='/images/hero-img.png'
+                src='/images/hero/hero-img.png'
                 alt='shield'
               />
             </div>
 
             <div className={s.imgCont}>
               <img
-                src='/images/hero-bg-image.png'
+                src='/images/hero/hero-bg-image.png'
                 alt='uzb-white-flag-shield'
               />
+            </div>
+
+            <div className={s.heroRotatingCircles}>
+              <img
+                className={s.bgCircle}
+                src='/images/hero/hero-animated-circle-dashed.png'
+                alt=''
+              />
+
+              {circles.map(i => (
+                <img
+                  className={s.circle}
+                  key={i}
+                  src={`/images/hero/anim-circle-imgs/${i}.webp`}
+                  alt=''
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -56,7 +75,7 @@ const Hero = () => {
             <figure className={s.imgCont}>
               <img
                 className='coverImage'
-                src='/images/hero-bottom-img1.png'
+                src='/images/hero/hero-bottom-img1.png'
                 alt='plant'
               />
             </figure>
@@ -69,7 +88,7 @@ const Hero = () => {
             <figure className={s.imgCont}>
               <img
                 className='coverImage'
-                src='/images/hero-bottom-img2.png'
+                src='/images/hero/hero-bottom-img2.png'
                 alt='plant'
               />
             </figure>
@@ -82,7 +101,7 @@ const Hero = () => {
             <figure className={s.imgCont}>
               <img
                 className='coverImage'
-                src='/images/hero-bottom-img1.png'
+                src='/images/hero/hero-bottom-img1.png'
                 alt='plant'
               />
             </figure>

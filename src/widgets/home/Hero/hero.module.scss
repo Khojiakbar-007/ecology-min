@@ -39,15 +39,85 @@
       .rotatingImg {
         position: absolute;
 
-        right : 150px;
-        bottom: 25px;
-        width : 296px;
-        height: 338px;
-
+        right    : 158px;
+        bottom   : -15px;
+        width    : 296px;
+        height   : 338px;
         animation: RotateImg 6s infinite forwards;
+      }
+
+      .heroRotatingCircles {
+        position    : absolute;
+        top         : -70px;
+        right       : -15px;
+        width       : 647px;
+        height      : 647px;
+        z-index     : 10;
+        // position : relative;
+
+        animation: infinite RotateClock 12s linear;
+
+        >img {
+          position: absolute;
+        }
+
+        .bgCircle {
+          width : 494px;
+          height: 494px;
+          top   : 77px;
+          left  : 77px;
+        }
+
+        .circle {
+          width    : 86px;
+          height   : 86px;
+          animation: infinite RotateAntiClock 12s linear;
+
+          &:nth-last-of-type(1) {
+            left: 281px;
+            top : 50px;
+          }
+
+          &:nth-last-of-type(2) {
+            left: 455px;
+            top : 111px;
+          }
+
+          &:nth-last-of-type(3) {
+            left: 525px;
+            top : 282px;
+          }
+
+          &:nth-last-of-type(4) {
+            left: 454px;
+            top : 450px;
+          }
+
+          &:nth-last-of-type(5) {
+            left: 281px;
+            top : 534px;
+          }
+
+          &:nth-last-of-type(6) {
+            left: 108px;
+            top : 452px;
+          }
+
+          &:nth-last-of-type(7) {
+            left: 35px;
+            top : 282px;
+          }
+
+          &:nth-last-of-type(8) {
+            left: 108px;
+            top : 105px;
+          }
+        }
       }
     }
   }
+
+
 }
 
 .bottomInfo {
@@ -88,5 +158,27 @@
 
   to {
     transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@keyframes RotateClock {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes RotateAntiClock {
+  0% {
+    transform-origin: 50% 50%;
+    transform       : rotate(360deg);
+  }
+
+  100% {
+    transform-origin: 50% 50%;
+    transform       : rotate(0deg);
   }
 }
