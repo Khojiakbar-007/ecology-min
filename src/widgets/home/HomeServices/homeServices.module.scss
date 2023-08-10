@@ -1,0 +1,83 @@
+.homeServices {
+  padding: 56px 0 32px;
+
+  .title {
+    margin-bottom: 44px;
+
+    color      : #231F20;
+    font-size  : 38px;
+    font-weight: 700;
+    text-align : center;
+  }
+
+  .servicesBox {
+    width     : 87%;
+    min-height: 326px;
+    padding   : 18px 16px 50px 53px;
+    gap       : 80px;
+    position  : relative;
+
+    border-radius: 4px;
+    background   : var(--light-bg-blue);
+
+    .heading {
+      display      : block;
+      margin-bottom: 8px;
+      margin-left  : 10px;
+
+      color      : var(--green);
+      font-size  : 14px;
+      font-weight: 400;
+      line-height: 142%;
+    }
+
+    .leftOptions {
+      width      : 640px;
+      // width   : 100%;
+
+      // width: 60%;
+
+      .servType {
+        width        : 100%;
+        margin-bottom: 24px;
+      }
+
+      .days {
+        margin-bottom: 24px;
+      }
+
+      .numOfServs {
+        // margin-bottom: 16px;
+      }
+    }
+
+    //     .rightPriceBox {
+    //       width   : 40%;
+    // }
+    .chartWrapper {
+      position: absolute;
+      top     : -25px;
+      right   : -200px;
+
+      .blueBg {
+        top          : 30px;
+        left         : 30px;
+        height       : 300px;
+        width        : 300px;
+        border-radius: 50%;
+        position     : absolute;
+        background   : #36F;
+      }
+    }
+
+    //   background: var(--white);
+
+    //   padding: 44px 25px 40px;
+
+    //   .topTitle {
+    //     font-size  : 22px;
+    //     font-weight: 600;
+    //   }
+    // }
+  }
+}
