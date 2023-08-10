@@ -60,8 +60,9 @@ const Services = () => {
               color='success'
               sx={{ justifyContent: 'space-between' /* width: '100%' */ }}
             >
-              {daysPerWeek.map(({ label, value }) => (
+              {daysPerWeek.map(({ label, value }, i) => (
                 <FormControlLabel
+                  key={i}
                   sx={{
                     padding: '5px 15px 5px 10px',
                     marginLeft: '0',
