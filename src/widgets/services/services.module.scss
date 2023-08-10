@@ -17,24 +17,49 @@
     border-radius: 4px;
     background   : var(--light-bg-blue);
 
+    .heading {
+      display      : block;
+      margin-bottom: 8px;
+      margin-left  : 10px;
+
+      color      : var(--green);
+      font-size  : 14px;
+      font-weight: 400;
+      line-height: 142%;
+    }
+
     .leftOptions {
       width: 60%;
 
-      .heading {
-        display      : block;
-        margin-bottom: 8px;
-        margin-left  : 10px;
 
-        color      : var(--green);
-        font-size  : 14px;
-        font-weight: 400;
-        line-height: 142%;
+      .selects {
+        gap          : 16px;
+        margin-bottom: 32px;
+
+        .servType {
+          width: 100%;
+        }
+      }
+
+      .days {
+        margin-bottom: 16px;
+      }
+
+      .numOfServs {
+        margin-bottom: 16px;
       }
     }
 
     .rightPriceBox {
       width     : 40%;
       background: var(--white);
+
+      padding: 44px 25px 40px;
+
+      .topTitle {
+        font-size  : 22px;
+        font-weight: 600;
+      }
     }
   }
 }

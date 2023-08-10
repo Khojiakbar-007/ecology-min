@@ -35,7 +35,7 @@ const Header = () => {
               <Link href='/news'>Новости и события</Link>
             </li>
             <li>
-              <Link href='#'>Услуги</Link>
+              <Link href='/services'>Услуги</Link>
             </li>
             <li>
               <Link href='/contacts'>Контакты</Link>
