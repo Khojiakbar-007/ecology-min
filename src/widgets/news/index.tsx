@@ -28,7 +28,8 @@ const News = () => {
             <div className={`${s.newsList} d-flex-col`}>
               {news.map((imgUrl, i) => (
                 <Link
-                  href={`news/${i}`}
+                  href={`#`}
+                  // href={`news/${i}`}
                   key={imgUrl + i}
                   className={`${s.new} d-flex-row`}
                 >

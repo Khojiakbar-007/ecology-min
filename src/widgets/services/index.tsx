@@ -14,33 +14,58 @@ const selectedStyles: SxProps = {
   background: 'rgba(108, 194, 27, 0.14)',
 };
 
+const daysPerWeek = [
+  { value: '1', label: '1 День' },
+  { value: '2', label: '2 Дня' },
+  { value: '3', label: '3 Дня' },
+  { value: '4', label: '4 Дня' },
+  { value: '5', label: '5 Дня' },
+];
+
+const numOfServs = [
+  { value: '1', label: '1 Раз' },
+  { value: '2', label: '2 Раза' },
+  { value: '3', label: '3 Раза' },
+  { value: '4', label: '4 Раза' },
+  { value: '5', label: '5 Раз' },
+];
+
 const Services = () => {
-  const [value, setValue] = useState('1');
+  const [days, setDays] = useState('1');
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setValue((event.target as HTMLInputElement).value);
+    setDays((event.target as HTMLInputElement).value);
   };
 
   return (
     <div className={s.services}>
       <div className='container-fluid'>
         <h1 className={s.title}>Наши услуги</h1>
-        <section className={s.servicesBox}>
+        <section className={`${s.servicesBox} d-flex-row-top`}>
           <div className={s.leftOptions}>
-            <FormControl>
-              <FormLabel id='demo-controlled-radio-buttons-group'>
-                Gender
-              </FormLabel>
-              <RadioGroup
-                aria-labelledby='demo-controlled-radio-buttons-group'
-                name='controlled-radio-buttons-group'
-                value={value}
-                onChange={handleChange}
+            {/* <FormLabel
                 color='success'
+                id='demo-controlled-radio-buttons-group'
               >
+                Gender
+              </FormLabel> */}
+            <span className={s.heading}>Кол-во дней в неделю</span>
+
+            <RadioGroup
+              row
+              aria-labelledby='demo-controlled-radio-buttons-group'
+              name='controlled-radio-buttons-group'
+              value={days}
+              onChange={handleChange}
+              color='success'
+              sx={{ justifyContent: 'space-between' /* width: '100%' */ }}
+            >
+              {daysPerWeek.map(({ label, value }) => (
                 <FormControlLabel
                   sx={{
                     padding: '5px 15px 5px 10px',
+                    marginLeft: '0',
+                    marginRight: '0 !important',
 
                     borderRadius: '8px',
                     border: '1px solid #D9D9D9',
@@ -62,21 +87,16 @@ const Services = () => {
                       letterSpacing: '0.07px',
                       textTransform: 'uppercase',
                     },
-                    ...(value === '1' ? selectedStyles : {}),
+                    ...(days === value ? selectedStyles : {}),
                   }}
-                  value='1'
+                  value={value}
                   control={<Radio color='success' />}
-                  label='1 День'
+                  label={label}
                 />
-                <FormControlLabel
-                  value='2'
-                  control={<Radio color='success' />}
-                  label=' Дня'
-                />
-              </RadioGroup>
-            </FormControl>
+              ))}
+            </RadioGroup>
           </div>
-          <div className={s.rightPriceBox}></div>
+          <div className={s.rightPriceBox}>Nimadir</div>
         </section>
       </div>
     </div>
