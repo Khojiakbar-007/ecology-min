@@ -1,0 +1,63 @@
+.bosses {
+  padding: 55px 0 0;
+
+  .title {
+    margin-bottom: 52px;
+
+    text-align : center;
+    font-size  : 38px;
+    font-weight: 700;
+  }
+
+  .cards {
+    gap: 24px;
+
+    .bossCard {
+      width  : 50%;
+      padding: 43px 58px 32px 37px;
+      gap    : 27px;
+
+      background   : #FAFAFA;
+      border-radius: 4px;
+
+      .leftImgCont {
+        text-align: center;
+
+        img {
+          max-width: 151px;
+          display  : block;
+          margin   : 0 auto 16px;
+        }
+
+        .name {
+          margin: 0 -15px 16px;
+
+
+          font-size     : 18px;
+          font-weight   : 700;
+          line-height   : 125%;
+          letter-spacing: -1px;
+        }
+
+        .email {
+          margin-bottom: 6px;
+
+          font-size  : 14px;
+          font-weight: 400;
+          line-height: 142%;
+        }
+      }
+
+      .rightDesc {
+        gap: 28px;
+
+        .job {
+
+          font-size  : 16px;
+          font-weight: 600;
+          line-height: 125%;
+        }
+      }
+    }
+  }
+}

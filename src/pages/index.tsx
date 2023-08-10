@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import SendMessage from 'widgets/contacts/ContactInfo/SendMessage';
+import Bosses from 'widgets/home/Bosses';
 import EcoAct from 'widgets/home/EcoAct';
 import Hero from 'widgets/home/Hero';
 import HomeServices from 'widgets/home/HomeServices';
@@ -14,6 +16,13 @@ const Home = () => {
       <LatestNews />
       <EcoAct />
       <HomeServices />
+      <Bosses />
+      <SendMessage />
+      <img
+        style={{ display: 'block' }}
+        src='/images/home/home-game.webp'
+        alt=''
+      />
     </>
   );
 };
