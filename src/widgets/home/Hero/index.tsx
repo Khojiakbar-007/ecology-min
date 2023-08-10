@@ -18,7 +18,17 @@ const Hero = () => {
               графических, печать и издательской индустрии
             </p>
 
-            <Button variant='contained'>Подробнее</Button>
+            <Button
+              sx={{
+                height: '48px',
+                textTransform: 'capitalize',
+                fontSize: '18px',
+                fontWeight: 500,
+              }}
+              variant='contained'
+            >
+              Подробнее
+            </Button>
           </div>
 
           <div className={s.right}>

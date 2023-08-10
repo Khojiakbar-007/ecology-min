@@ -24,7 +24,7 @@ const Header = () => {
         <nav>
           <ul className={`${s.navLinks} d-flex-row`}>
             <li>
-              <Link href='/'>О нас</Link>
+              <Link href='/about'>О нас</Link>
             </li>
             <li>
               <Link href='/news'>Новости и события</Link>

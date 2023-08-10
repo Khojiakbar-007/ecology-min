@@ -1,0 +1,156 @@
+.about {
+  .top {
+    padding: 150px 20px 55px 80px;
+    gap    : 32px;
+
+    .titleCont {
+      width  : 65%;
+      padding: 24px 48px 12px;
+
+      background: #F8F8F8;
+
+      .preTitle {
+        margin-bottom: 16px;
+      }
+
+      .title {
+        color         : #231F20;
+        font-size     : 32px;
+        font-weight   : 700;
+        line-height   : 150%;
+        letter-spacing: -2px;
+      }
+    }
+
+    .desc {
+      width: 45%;
+
+      font-size  : 16px;
+      font-weight: 400;
+      line-height: 175%;
+    }
+  }
+
+  .preTitle {
+    color         : var(--green);
+    font-size     : 16px;
+    font-weight   : 500;
+    line-height   : 125%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .parag {
+    font-size  : 16px;
+    font-weight: 400;
+    line-height: 175%;
+  }
+
+  h3.title {
+    font-size  : 24px;
+    font-weight: 700;
+    line-height: 133.333%;
+  }
+
+  .hero {
+    .heroImgCont {
+      margin: 0 -60px;
+
+      img {
+        display: block;
+      }
+    }
+
+    .infoBox {
+      margin : 0 -40px 42px;
+      padding: 53px 67px 60px 110px;
+
+      background: var(--lavender);
+
+      .preTitle {
+        margin-bottom: 28px;
+
+      }
+
+      .title {
+        margin-bottom: 12px;
+
+        font-size     : 30px;
+        font-weight   : 700;
+        line-height   : 133.333%;
+        letter-spacing: -1px;
+      }
+
+      .desc {
+        font-size: 18px;
+
+        font-weight: 400;
+        line-height: 175%;
+      }
+    }
+  }
+
+  .article1 {
+    margin-bottom: 48px;
+
+    .article1top {
+      gap: 60px;
+
+      .left {
+        width: 45%;
+
+        .title {
+          margin-bottom: 16px;
+        }
+
+        .desc {}
+      }
+
+      .imgCont {
+        width: 55%;
+      }
+    }
+  }
+
+  .article2 {
+    gap          : 100px;
+    margin-bottom: 42px;
+
+    .imgCont {
+      width: 48%;
+
+      border-radius: 4px;
+      overflow     : hidden;
+    }
+
+    .rightText {
+      width: 52%;
+
+      .title {
+        margin-bottom: 32px;
+
+        color         : var(--green);
+        font-size     : 36px;
+        font-weight   : 700;
+        line-height   : 133.333%;
+        letter-spacing: -2px;
+      }
+
+      .desc {
+        font-size  : 16px;
+        font-weight: 600;
+        line-height: 175%;
+      }
+    }
+  }
+
+  .article3 {
+    margin-left  : 15px;
+    margin-bottom: 100px;
+
+    .title {
+      margin-bottom: 16px;
+    }
+
+  }
+}
