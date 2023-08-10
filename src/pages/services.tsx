@@ -1,14 +1,11 @@
 import React from 'react';
+import Services from 'widgets/services';
 
 const ServicesPage = () => {
   return (
-    <section className='services'>
-      <div className='container-fluid'>
-        <h1>Наши услуги</h1>
-
-        <div className='servWrapper'></div>
-      </div>
-    </section>
+    <>
+      <Services />
+    </>
   );
 };
 
