@@ -53,7 +53,7 @@
         z-index     : 10;
         // position : relative;
 
-        animation: infinite RotateClock 12s linear;
+        animation: infinite RotateClock 70s linear;
 
         >img {
           position: absolute;
@@ -69,7 +69,7 @@
         .circle {
           width    : 86px;
           height   : 86px;
-          animation: infinite RotateAntiClock 12s linear;
+          animation: infinite RotateAntiClock 70s linear;
 
           &:nth-last-of-type(1) {
             left: 281px;
