@@ -29,6 +29,24 @@ const Header = () => {
         <nav>
           <ul className={`${s.navLinks} d-flex-row`}>
             <li>
+              <Link href='/about'>Xizmat haqida</Link>
+            </li>
+            <li>
+              <Link href='/news'>Faoliyat</Link>
+            </li>
+            <li>
+              <Link href='/services'>Xizmatlar</Link>
+            </li>
+            <li>
+              <Link href='#'>Hujjatlar</Link>
+            </li>
+            <li>
+              <Link href='#'>Axborot xizmati</Link>
+            </li>
+            <li>
+              <Link href='/contacts'>Bog'lanish</Link>
+            </li>
+            {/* <li>
               <Link href='/about'>О нас</Link>
             </li>
             <li>
@@ -39,7 +57,7 @@ const Header = () => {
             </li>
             <li>
               <Link href='/contacts'>Контакты</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
