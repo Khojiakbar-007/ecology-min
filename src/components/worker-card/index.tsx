@@ -21,7 +21,9 @@ const WorkerCard = ({ data }: IProps) => {
         <div className={s.detail}>
           Telefon -{' '}
           {data.phoneNumber?.map(phone => (
-            <a href={`tel:${phone}`}>{formatPhone(phone)} </a>
+            <a key={phone} href={`tel:${phone}`}>
+              {formatPhone(phone)}{' '}
+            </a>
           ))}
         </div>
         <div className={s.detail}>

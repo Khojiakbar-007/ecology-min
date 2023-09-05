@@ -41,8 +41,8 @@ const LinkItem = ({ mainLink, title, links }: IProps) => {
     <Tooltip
       title={
         <ul>
-          {links.map(data => (
-            <li>
+          {links.map((data, i) => (
+            <li key={data.name + i}>
               <Link href={mainLink + data.link}>{data.name}</Link>
             </li>
           ))}

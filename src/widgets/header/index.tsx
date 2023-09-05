@@ -71,6 +71,7 @@ const Header = () => {
           <ul className={`${s.navLinks} d-flex-row`}>
             {allLinks.map(item => (
               <LinkItem
+                key={item.mainLink}
                 links={item.data}
                 mainLink={item.mainLink}
                 title={item.title}

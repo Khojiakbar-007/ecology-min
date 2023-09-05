@@ -8,7 +8,7 @@ const ManagementSection = () => {
     <section className={s.manageCont}>
       <div className={`${s.cardsCont} container-fluid d-flex-col-stretch`}>
         {managementData.map(data => (
-          <WorkerCard data={data} />
+          <WorkerCard key={data.regionId} data={data} />
         ))}
       </div>
     </section>
