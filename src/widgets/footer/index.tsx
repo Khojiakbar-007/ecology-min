@@ -16,8 +16,8 @@ const Footer = () => {
                 <img src='/images/logo.png' alt='ecology logo' />
               </div>
               <p>
-                МИНИСТЕРСТВО ЭКОЛОГИИ, <br /> ОХРАНЫ ОКРУЖАЮЩЕЙ СРЕДЫ <br /> И
-                ИЗМЕНЕНИЯ КЛИМАТА <br /> РЕСПУБЛИКИ УЗБЕКИСТАН
+                Sanitar Tozalash <br /> ishlarini tashkil etish <br />{' '}
+                Respublika markazi
               </p>
             </div>
           </Link>
@@ -74,20 +74,20 @@ const Footer = () => {
               <div className={`${s.contacts} d-flex-col`}>
                 <div className={s.field}>
                   <p className={s.name}>Контакты</p>
-                  <a className={s.value} href='tel:998712070770'>
-                    +(99871) 207-07-70
+                  <a className={s.value} href='tel:998712683448'>
+                    +(99871) 268-34-48
                   </a>
                 </div>
                 <div className={s.field}>
                   <p className={s.name}>Короткий номер</p>
                   <a className={s.value} href='tel:1157'>
-                    1157
+                    0000
                   </a>
                 </div>
                 <div className={s.field}>
                   <p className={s.name}>Телефон доверия</p>
                   <a className={s.value} href='tel:998712070770'>
-                    (+99871) 207-07-70 (1013#)
+                    (+99871) 000-00-00
                   </a>
                 </div>
               </div>

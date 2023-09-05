@@ -72,7 +72,7 @@ const Services = () => {
         <h1 className={s.title}>Наши услуги</h1>
         <section className={`${s.servicesBox} d-flex-row-top`}>
           <div className={s.leftOptions}>
-            <div className={`${s.selects} d-flex-col`}>
+            {/* <div className={`${s.selects} d-flex-col`}>
               <div className={s.servType}>
                 <StyledServSelect
                   label='Вид услуги'
@@ -106,11 +106,10 @@ const Services = () => {
                   <MenuItem value={'lorry'}>Грузовик</MenuItem>
                 </StyledServSelect>
               </div>
-            </div>
+            </div> */}
 
-            <div className={s.days}>
+            {/* <div className={s.days}>
               <span className={s.heading}>Кол-во дней в неделю</span>
-
               <RadioGroup
                 row
                 aria-labelledby='demo-controlled-radio-buttons-group'
@@ -118,7 +117,7 @@ const Services = () => {
                 value={days}
                 onChange={handleChangeDays}
                 color='success'
-                sx={{ justifyContent: 'space-between' /* width: '100%' */ }}
+                sx={{ justifyContent: 'space-between' }}
               >
                 {daysPerWeek.map(({ label, value }, i) => (
                   <FormControlLabel
@@ -168,7 +167,7 @@ const Services = () => {
                 value={servs}
                 onChange={handleChangeServs}
                 color='success'
-                sx={{ justifyContent: 'space-between' /* width: '100%' */ }}
+                sx={{ justifyContent: 'space-between' }}
               >
                 {numOfServs.map(({ label, value }, i) => (
                   <FormControlLabel
@@ -206,7 +205,7 @@ const Services = () => {
                   />
                 ))}
               </RadioGroup>
-            </div>
+            </div> */}
 
             <div className={`${s.selects} d-flex-col`}>
               <div className={s.servType}>
@@ -234,7 +233,7 @@ const Services = () => {
               </div>
             </div>
 
-            <iframe
+            {/* <iframe
               src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34835.42580591615!2d69.24651711669267!3d41.315221381670966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b3b50823165%3A0xa5cbadc900d5ecec!2sMustakillik%20maydoni!5e0!3m2!1sen!2s!4v1691659450369!5m2!1sen!2s'
               width='637'
               height='318'
@@ -242,7 +241,7 @@ const Services = () => {
               allowFullScreen
               loading='lazy'
               referrerPolicy='no-referrer-when-downgrade'
-            ></iframe>
+            ></iframe> */}
           </div>
           <div className={s.rightPriceBox}>
             <h2 className={s.topTitle}>Стоимость услуги</h2>

@@ -5,17 +5,17 @@ import { useHoverDirty } from 'react-use';
 // prettier-ignore
 interface IRegionProps {
   Path: React.ForwardRefExoticComponent<Omit<React.SVGProps<SVGPathElement>, "ref"> & React.RefAttributes<SVGPathElement>>
-  name: string;
-  selRegion: string;
-  setSelRegion: Dispatch<SetStateAction<string>>
-  hoverRegion: string;
-  setHoverRegion: Dispatch<SetStateAction<string>>
+  id: number;
+  selRegion: number;
+  setSelRegion: Dispatch<SetStateAction<number>>
+  hoverRegion: number;
+  setHoverRegion: Dispatch<SetStateAction<number>>
   hasMouse: boolean;
 }
 
 const Region = ({
   Path,
-  name,
+  id,
   setSelRegion,
   selRegion,
   hoverRegion,
@@ -25,14 +25,14 @@ const Region = ({
   const pathRef = useRef<SVGPathElement>(null);
   // @ts-ignodre
   const isMouseHovering = useHoverDirty(pathRef);
-  const isHovering = isMouseHovering && hoverRegion === name;
+  const isHovering = isMouseHovering && hoverRegion === id;
 
-  const isSelected = name === selRegion;
+  const isSelected = id === selRegion;
 
   useEffect(() => {
     if (isMouseHovering && pathRef.current) {
       pathRef.current?.parentElement?.appendChild(pathRef.current);
-      setHoverRegion(name);
+      setHoverRegion(id);
     }
   }, [isMouseHovering, pathRef.current]);
 
@@ -50,7 +50,7 @@ const Region = ({
       }
     : {};
 
-  const handleClick = () => setSelRegion(name);
+  const handleClick = () => setSelRegion(id);
   return (
     // @ts-ignore
     <Path onClick={handleClick} ref={pathRef} {...props} />

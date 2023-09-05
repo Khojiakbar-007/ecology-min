@@ -1,0 +1,19 @@
+.card {
+  gap: 30px;
+
+  .imgCont {
+    width: 20%;
+  }
+
+  .desc {
+    width: 80%;
+    gap  : 5px;
+
+    line-height: 150%;
+
+
+    .name {
+      color: var(--blue);
+    }
+  }
+}

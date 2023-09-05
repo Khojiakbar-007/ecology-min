@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import s from './contactMap.module.scss';
-import UzbMap from 'components/UzbMap';
-import MapContacts from 'components/MapContacts';
+import UzbMap from 'components/uzb-map';
+import MapContacts from 'components/map-contacts';
 
 const ContactMap = () => {
-  const [selRegion, setSelRegion] = useState('Toshkent');
+  const [selRegion, setSelRegion] = useState(10);
 
   return (
     <section className={s.contactMap}>
