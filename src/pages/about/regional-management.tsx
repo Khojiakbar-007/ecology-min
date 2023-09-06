@@ -1,5 +1,12 @@
+import { managementData } from 'shared/managementData';
+import ManagementSection from 'widgets/about/regional-management';
+
 const RegionalManagement = () => {
-  return <div>RegionalManagement</div>;
+  return (
+    <>
+      <ManagementSection />
+    </>
+  );
 };
 
 export default RegionalManagement;

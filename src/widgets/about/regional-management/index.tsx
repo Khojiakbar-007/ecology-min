@@ -1,14 +1,16 @@
 import React from 'react';
 import s from './management.module.scss';
 import WorkerCard from 'components/worker-card';
-import { managementData } from 'shared/managementData';
+// prettier-ignore
+import { IWorkerType, highManageData, managementData } from 'shared/managementData';
+highManageData;
 
-const ManagementSection = () => {
+const ManagementSection = ({ isHigh }: { isHigh?: boolean }) => {
   return (
     <section className={s.manageCont}>
       <div className={`${s.cardsCont} container-fluid d-flex-col-stretch`}>
-        {managementData.map(data => (
-          <WorkerCard key={data.regionId} data={data} />
+        {(isHigh ? highManageData : managementData).map(data => (
+          <WorkerCard key={data.name} data={data as IWorkerType} />
         ))}
       </div>
     </section>

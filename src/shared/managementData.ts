@@ -7,6 +7,20 @@ type IWorkerType = {
   regionId: number;
 };
 
+type IHighManageType = {
+  name?: string;
+  position?: string;
+};
+const doimiyIshVaqti = '';
+
+const highManageData: IHighManageType[] = [
+  { name: 'Hasanov Sharifbek Shamsiddinovich', position: 'Markaz Direktori' },
+  {
+    name: 'Xusanov Vahob Obloqulovich',
+    position: 'Direktor o’rinbosari lizing departamenti rahbari',
+  },
+];
+
 const managementData: IWorkerType[] = [
   {
     name: 'Nurillaev Marat Azatovich',
@@ -122,4 +136,4 @@ const managementData: IWorkerType[] = [
 ];
 
 export type { IWorkerType };
-export { managementData };
+export { managementData, highManageData };

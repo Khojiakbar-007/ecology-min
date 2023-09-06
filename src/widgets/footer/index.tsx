@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { IconButton, IconButtonProps } from '@mui/material';
 // prettier-ignore
 import { BiLogoFacebook, BiLogoInstagramAlt, BiLogoTelegram, BiLogoYoutube } from 'react-icons/bi';
+import logoImg from 'shared/assets/logo-state-emblem.webp';
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
           <Link href='/'>
             <div className={`${s.logo} d-flex-row`}>
               <div className={s.imgCont}>
-                <img src='/images/logo.png' alt='ecology logo' />
+                <img src={logoImg.src} alt='ecology logo' />
               </div>
               <p>
                 Sanitar Tozalash <br /> ishlarini tashkil etish <br />{' '}

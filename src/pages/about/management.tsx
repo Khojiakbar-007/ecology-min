@@ -1,11 +1,11 @@
 import { managementData } from 'shared/managementData';
-import ManagementSection from 'widgets/about/management';
+import ManagementSection from 'widgets/about/regional-management';
 
 managementData;
 const Management = () => {
   return (
     <>
-      <ManagementSection />
+      <ManagementSection isHigh />
     </>
   );
 };
