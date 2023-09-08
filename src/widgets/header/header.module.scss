@@ -8,8 +8,9 @@
   background-color: var(--green);
   color           : var(--white);
 
-  &.headerNoBottomPadding {
-    padding-bottom: 0;
+  &.homeHeader {
+    padding-bottom  : 0;
+    background-color: initial;
   }
 
   .logo {
@@ -46,7 +47,6 @@
 
   .selectLang {
     min-width: 92px;
-
   }
 
   .socialIcons {

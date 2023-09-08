@@ -9,6 +9,8 @@ const Hero = () => {
   return (
     <>
       <section className={s.homeHero}>
+        <div className={s.bgImg1}>{/* <img src='/images/' alt='' /> */}</div>
+        <div className={s.bgImg2}>{/* <img src='/images/' alt='' /> */}</div>
         <div className={`${s.cont} container-fluid d-flex-row`}>
           <div className={`${s.left} d-flex-col`}>
             <h1 className={s.title}>
@@ -34,20 +36,22 @@ const Hero = () => {
           </div>
 
           <div className={s.right}>
-            <div className={s.rotatingImg}>
-              <img
-                className='coverImage'
-                src='/images/hero/hero-img.png'
-                alt='shield'
-              />
-            </div>
-
-            <div className={s.imgCont}>
-              <img
-                src='/images/hero/hero-bg-image.png'
-                alt='uzb-white-flag-shield'
-              />
-            </div>
+            {/* <div className={s.rotatingImg}>
+              <div className={s.firstImgCont}>
+                <img
+                  className={`${s.firstImg} coverImage`}
+                  src='/images/hero/tree-green.png'
+                  alt='shield'
+                />
+              </div>
+              <div className={s.secondImgCont}>
+                <img
+                  className={`${s.secondImg} coverImage`}
+                  src='/images/hero/tree-dark.png'
+                  alt='shield'
+                />
+              </div>
+            </div> */}
 
             <div className={s.heroRotatingCircles}>
               <img
@@ -80,7 +84,7 @@ const Hero = () => {
               />
             </figure>
             <p className={`${s.desc} d-flex-col`}>
-              <span className={s.title}>Чой хаки</span>
+              <span className={s.title}>Aholi soni</span>
               <span className={s.number}>1 113 156</span>
             </p>
           </div>
@@ -93,7 +97,7 @@ const Hero = () => {
               />
             </figure>
             <p className={`${s.desc} d-flex-col`}>
-              <span className={s.title}>Чой хаки</span>
+              <span className={s.title}>Statistika</span>
               <span className={s.number}>1 113 156</span>
             </p>
           </div>
@@ -106,7 +110,7 @@ const Hero = () => {
               />
             </figure>
             <p className={`${s.desc} d-flex-col`}>
-              <span className={s.title}>Чой хаки</span>
+              <span className={s.title}>Statistika</span>
               <span className={s.number}>1 113 156</span>
             </p>
           </div>

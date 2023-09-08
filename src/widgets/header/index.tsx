@@ -44,15 +44,17 @@ const allLinks = [
       },
     ],
   },
+  // {
+  //   title: 'Xizmatlar',
+  //   mainLink: '/services',
+  // },
 ];
 
 const Header = () => {
   const { pathname } = useRouter();
   const isAtHome = pathname === '/';
   return (
-    <header
-      className={`${s.header} ${isAtHome ? s.headerNoBottomPadding : ''}`}
-    >
+    <header className={`${s.header} ${isAtHome ? s.homeHeader : ''}`}>
       <nav className='container-fluid d-flex-row'>
         <Link href='/'>
           <div className={`${s.logo} d-flex-row`}>
@@ -118,7 +120,7 @@ const Header = () => {
           <SelectLang />
         </div>
 
-        <div className={`${s.socialIcons} d-flex-row`}>
+        {/* <div className={`${s.socialIcons} d-flex-row`}>
           <IconButton LinkComponent={Link} href='' sx={{ padding: '4px' }}>
             <BiLogoFacebook color='var(--white)' />
           </IconButton>
@@ -131,7 +133,7 @@ const Header = () => {
           <IconButton LinkComponent={Link} href='' sx={{ padding: '4px' }}>
             <BiLogoTelegram color='var(--white)' />
           </IconButton>
-        </div>
+        </div> */}
       </nav>
     </header>
   );

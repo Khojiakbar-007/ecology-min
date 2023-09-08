@@ -4,6 +4,8 @@ import manageImg from 'shared/assets/about/manage-img.jpg';
 import { IWorkerType } from 'shared/managementData';
 import { formatPhone } from 'utils';
 
+import placeholderImg from 'shared/assets/placeholder/user-place-img.png';
+
 interface IProps {
   data: IWorkerType;
 }
@@ -12,7 +14,17 @@ const WorkerCard = ({ data }: IProps) => {
   return (
     <section className={`${s.card} d-flex-row-top`}>
       <figure className={s.imgCont}>
-        <img className='coverImage' src={manageImg.src} alt='' />
+        <img
+          className='coverImage'
+          src={data.img || placeholderImg.src}
+          onError={event => {
+            // @ts-ignore
+            event.target.src = placeholderImg.src;
+            // @ts-ignore
+            event.onerror = null;
+          }}
+          alt=''
+        />
       </figure>
 
       <article className={`${s.desc} d-flex-col`}>

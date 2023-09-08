@@ -5,6 +5,7 @@ type IWorkerType = {
   email?: string;
   region?: string;
   regionId: number;
+  img?: string;
 };
 
 type IHighManageType = {
@@ -29,6 +30,7 @@ const managementData: IWorkerType[] = [
     email: 'm.nurillayev@sanitation.uz',
     region: "Qoraqalpog'iston Respublikasi",
     regionId: 0,
+    img: '',
   },
   {
     name: 'Sattorov Zokir Roziqovich',
@@ -37,6 +39,7 @@ const managementData: IWorkerType[] = [
     email: 'z.sattarov@sanitation.uz',
     region: 'Buxoro Viloyati',
     regionId: 1,
+    img: '/images/regional-management/buxoro-dir.jpg',
   },
   {
     name: 'Salimov Oybek Bahodirovich',
@@ -45,6 +48,7 @@ const managementData: IWorkerType[] = [
     email: 'o.salimov@sanitation.uz',
     region: 'Jizzax Viloyati',
     regionId: 2,
+    img: '/images/regional-management/jizzax-dir.jpg',
   },
   {
     name: 'Baxromov Abbos Bexzodovich',
@@ -53,6 +57,7 @@ const managementData: IWorkerType[] = [
     email: 'a.bahromov@sanitation.uz',
     region: 'Qashqadaryo Viloyati',
     regionId: 3,
+    img: '/images/regional-management/qashqadaryo-dir.jpg',
   },
   {
     name: 'Toshonov Ilxom Maxmudovich',
@@ -61,6 +66,7 @@ const managementData: IWorkerType[] = [
     email: 'i.toshonov@sanitation.uz',
     region: 'Navoiy Viloyati',
     regionId: 4,
+    img: '',
   },
   {
     name: 'Abidov Raxmatillo Ibroximjonovich',
@@ -69,6 +75,7 @@ const managementData: IWorkerType[] = [
     email: 'r.abidov@sanitation.uz',
     region: 'Namangan Viloyati',
     regionId: 5,
+    img: '/images/regional-management/namangan-dir.jpg',
   },
   {
     name: 'Munavvarov Umidjon Uchkunovich',
@@ -77,6 +84,7 @@ const managementData: IWorkerType[] = [
     email: 'u.munavvarov@sanitation.uz',
     region: 'Samarqand Viloyati',
     regionId: 6,
+    img: '',
   },
   {
     name: 'Axmedov Rustam Namazovich',
@@ -85,6 +93,7 @@ const managementData: IWorkerType[] = [
     email: 'r.axmedov@sanitation.uz',
     region: 'Surxondaryo Viloyati',
     regionId: 7,
+    img: '/images/regional-management/surxondaryo-dir.jpg',
   },
   {
     name: 'Sulaymonov Kamolitdin Nurbaevich',
@@ -93,6 +102,7 @@ const managementData: IWorkerType[] = [
     email: 'k.sulaymonov@sanitation.uz',
     region: 'Sirdaryo Viloyati',
     regionId: 8,
+    img: '/images/regional-management/sirdaryo.dir.jpg',
   },
   {
     name: 'Ismailov Xayrulla Kurultaevich',
@@ -101,6 +111,7 @@ const managementData: IWorkerType[] = [
     email: 'x.ismailov@sanitation.uz',
     region: 'Toshkent Viloyati',
     regionId: 9,
+    img: '',
   },
   {
     name: 'Nurmanov Abdulla Ibragimovich',
@@ -109,6 +120,7 @@ const managementData: IWorkerType[] = [
     email: 'a.nurmanov@sanitation.uz',
     region: 'Toshkent Shahri',
     regionId: 10,
+    img: '',
   },
   {
     name: 'Xoliqov Abdulaziz Sodiqjonovich',
@@ -117,6 +129,7 @@ const managementData: IWorkerType[] = [
     email: 'a.xoliqov@sanitation.uz',
     region: "Farg'ona Viloyati",
     regionId: 11,
+    img: '',
   },
   {
     name: 'Raxmanov Oybek Odilbekovich',
@@ -125,6 +138,7 @@ const managementData: IWorkerType[] = [
     email: 'o.raxmanov@sanitation.uz',
     region: 'Xorazm Viloyati',
     regionId: 12,
+    img: '/images/regional-management/xorazm-dir.jpg',
   },
   {
     // name: 'Ro‘ziboyev Rustambek Dostonbek o‘g‘li',
@@ -132,6 +146,7 @@ const managementData: IWorkerType[] = [
     email: 'r.roziboyev@sanitation.uz',
     region: 'Andijon Viloyati',
     regionId: 13,
+    img: '',
   },
 ];
 

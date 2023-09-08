@@ -1,8 +1,39 @@
 .homeHero {
-  padding-top     : 140px;
-  min-height      : calc(100vh - 8rem);
-  background-color: var(--green);
-  color           : var(--white);
+  padding-top        : 140px;
+  min-height         : calc(100vh - 8rem);
+  // background-color: var(--green);
+
+  color   : var(--white);
+  position: relative;
+
+  // .bgImgsCont {
+
+  .bgImg1,
+  .bgImg2 {
+    width   : 100%;
+    height  : 100%;
+    position: absolute;
+    z-index : -1;
+    left    : 0;
+    top     : 0;
+    right   : 0;
+    bottom  : 0;
+
+    // background: url("/images/back-img-1.webp") no-repeat center center / cover;
+    filter: blur(2px);
+  }
+
+  .bgImg1 {
+    background: url("/images/back-img-1.webp") no-repeat center center / cover;
+  }
+
+  .bgImg2 {
+    background: url("/images/back-img-2.webp") no-repeat center center / cover;
+    animation : FadeBgImg 24s infinite;
+  }
+
+
+  // }
 
   .cont {
 
@@ -26,7 +57,7 @@
     }
 
     .right {
-      position : relative;
+      // position : relative;
       flex-grow: 1;
 
       .imgCont {
@@ -36,21 +67,44 @@
 
       .rotatingImg {
         position: absolute;
+        right   : 182px;
+        bottom  : 0;
+        width   : 470px;
+        height  : 470px;
 
-        right    : 158px;
-        bottom   : -15px;
-        width    : 296px;
-        height   : 338px;
-        animation: RotateImg 6s infinite forwards;
+        .firstImgCont {
+          position           : absolute;
+          animation          : RotateImg 6s infinite forwards;
+          backface-visibility: hidden;
+          width              : 470px;
+          height             : 470px;
+
+          .firstImg {}
+        }
+
+        .secondImgCont {
+          position           : absolute;
+          animation          : RotateImgBack 6s infinite forwards;
+          backface-visibility: hidden;
+          width              : 470px;
+          height             : 470px;
+
+          .secondImg {
+            // transform: rotate3d(0, 1, 0, 180deg);
+          }
+        }
+
       }
 
       .heroRotatingCircles {
-        position    : absolute;
-        top         : -70px;
-        right       : -15px;
-        width       : 647px;
-        height      : 647px;
-        z-index     : 10;
+        position       : absolute;
+        // top         : -70px;
+        // right       : -15px;
+        top            : 40px;
+        right          : 90px;
+        width          : 647px;
+        height         : 647px;
+        z-index        : 10;
         // position : relative;
 
         animation: infinite RotateClock 70s linear;
@@ -149,6 +203,28 @@
   }
 }
 
+@keyframes FadeBgImg {
+  0% {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  54% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes RotateImg {
   from {
     transform: rotate3d(0, 1, 0, 0deg);
@@ -156,6 +232,16 @@
 
   to {
     transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@keyframes RotateImgBack {
+  from {
+    transform: rotate3d(0, 1, 0, -180deg);
+  }
+
+  to {
+    transform: rotate3d(0, 1, 0, 180deg);
   }
 }
 
